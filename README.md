@@ -15,7 +15,7 @@
  <img src="https://img.shields.io/badge/Project-WIP-orange"> <img src="https://img.shields.io/badge/Documentation-Outdated-orange">
 </p>
 <p align="center">
- <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#features">Features</a> • <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#usage">Help</a>
+ <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#features">Features</a> • <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#help">Help</a>
 </p>
 
 
@@ -39,7 +39,7 @@ You and your friends will be able to set useful reminders and alarms inside your
 
 1. Alarms (recurrent reminders)
 2. Delete reminders and alarms
-3. More settings for reminders (e.g. to specify the amount of time left rather than the date and time)
+3. More settings for reminders (e.g. to specify the amount of time left rather than the date and time, to allow more date formats like YYYY-MM-DD)
 4. Server configuration for server roles with permissions (now available for server creator only)
 5. Multiple broadcast channels
 6. Assign different time zones for the multiple broadcast channels (if you have a friend in a different time zone this will be very helpful :smile:)
@@ -47,7 +47,7 @@ You and your friends will be able to set useful reminders and alarms inside your
 
 # Help
 
-## 🛠️ **Set up**
+## **Set up** 🛠️
 
 To set up Scheduler, first you need to set a time zone for the server using ```>>chtimezone YourTimeZone```. It is set to UTC+0 by default.
 For the moment, you only can set a time zone by using its full name (e.g. Atlantic/Canary, Europe/Madrid, etc...).
@@ -57,14 +57,14 @@ Check out [this list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zon
 :warning: Be careful, as having the expected time on your server does not mean that you got the correct time zone.
 Not all time zones accomplish [DST](https://en.wikipedia.org/wiki/Daylight_saving_time), so having an incorrect time zone might cause an unexpected time offset on spring and summer.
 
-## ❕ **Command prefix**
+## **Command prefix** ❕
 
 The default command prefix is `>>`. 
 
 You can change it by using
 ```>>chprefix```
 
-## :loudspeaker: Broadcast channel
+## Broadcast channel :loudspeaker:
 
 Every time a reminder is sent, it'll be throught the *default* channel. By default, the *default* channel will be set to 'general'.
 
@@ -72,10 +72,9 @@ This can be modified using
 
 `>>chchannel newchannel`
 
-## :calendar: Reminders
+## Reminders :calendar:
 
 A reminder is used when you need to remember something once on a concrete date and time.
-
 In the current version, you can create a reminder by specifying time, date, and a title.
 
 `>>reminder dd-mm-yyyy hh-mm "title"`
@@ -85,7 +84,6 @@ Also, you can add a description, so you or your friends have some context on wha
 `>>reminder dd-mm-yyyy hh-mm "title" "description"`
 
 These reminders will be sent by default through `general`. You can [change it](https://github.com/Chgv99/Scheduler/blob/main/README.md#broadcast-channel) to whichever you want.
-
 If you want to send a reminder through a different channel from the default you can specify it too. Just like this:
 
 `>>reminder dd-mm-yyyy hh-mm "title" "description" channel`
@@ -94,4 +92,4 @@ If you want to send a reminder through a different channel from the default you 
 
 :warning: The title and description of a reminder have to be enclosed in double quotes.
 
-## :alarm_clock:
+<!--## :alarm_clock:-->
