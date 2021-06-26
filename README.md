@@ -1,6 +1,6 @@
-<p align="center">
+<!--<p align="center">
   <a href="https://github.com/Chgv99/Face-Class/blob/main/README.md">English</a> • <a href="https://github.com/Chgv99/Face-Class/blob/main/README(es).md">Español</a>
-</p>
+</p>-->
 
 <h1 align="center">
  Scheduler
@@ -17,3 +17,26 @@
 <p align="center">
  <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#features">Features</a> • <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#usage">Help</a>
 </p>
+
+
+# Features
+
+You and your friends will be able to set useful reminders and alarms inside your Discord server for everyone to see.
+
+<details open>
+  <summary><b>The current version offers:</b></summary>
+
+1. 
+  
+</details>
+
+<details>
+<summary><b>Future features:</b></summary>
+
+1. 
+  
+</details>
+
+# Help
+
+
