@@ -50,12 +50,9 @@ You and your friends will be able to set useful reminders and alarms inside your
 ## 🛠️ **Set up**
 
 To set up Scheduler, first you need to set a time zone for the server using ```>>chtimezone YourTimeZone```. It is set to UTC+0 by default.
-
 For the moment, you only can set a time zone by using its full name (e.g. Atlantic/Canary, Europe/Madrid, etc...).
 
-Check out [this list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of time zones if you don\'t know yours.
-
-You can always see the current time zone of the server using `>>timezone` and the time using `>>time`.
+Check out [this list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of time zones if you don\'t know yours. You can always see the current time zone of the server using `>>timezone` and the time using `>>time`.
 
 :warning: Be careful, as having the expected time on your server does not mean that you got the correct time zone.
 Not all time zones accomplish [DST](https://en.wikipedia.org/wiki/Daylight_saving_time), so having an incorrect time zone might cause an unexpected time offset on spring and summer.
