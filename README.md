@@ -12,12 +12,17 @@
  <b>A Discord bot that allows you to create reminders and alarms inside your own server.</b>
 </p>
 <p align="center">
- <img src="https://img.shields.io/badge/Project-WIP-orange"> <img src="https://img.shields.io/badge/Documentation-Outdated-orange">
+ <img src="https://img.shields.io/badge/Project-WIP-orange"> <img src="https://img.shields.io/badge/Documentation-Incomplete-orange">
 </p>
 <p align="center">
  <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#features">Features</a> • <a href="https://github.com/Chgv99/Scheduler/blob/main/README.md#help">Help</a>
 </p>
 
+# Add to server
+
+<p align="center">
+ :warning: The bot is currently WIP. This means that the database is subject to change at any moment, so any stored reminder, alarm or server configuration has a high probability of being erased. The link won't be available in this stage of the development.
+</p>
 
 # Features
 
