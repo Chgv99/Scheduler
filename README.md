@@ -3,7 +3,8 @@
 </p>-->
 
 <h1 align="center">
- Scheduler
+ <!--Scheduler-->
+  <img src="img/banner.png">
 </h1>
 <!--<h1 style="display: none">
   EY
