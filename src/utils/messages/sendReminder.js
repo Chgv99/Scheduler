@@ -22,7 +22,7 @@ module.exports = function (client, data) {
     var targetChannel;
     if (data.targetChannel) targetChannel = data.targetChannel;
     else targetChannel = guildOutputChannels.get(data.guildId);
-
+    console.log("target channel: ", targetChannel)
 
     const channel = client.channels.cache.find(channel => {
         //console.log("channel");
