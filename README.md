@@ -4,7 +4,7 @@
 
 <h1 align="center">
  <!--Scheduler-->
-  <img src="img/banner.png">
+  <img width="60%" src="img/banner.png">
 </h1>
 <!--<h1 style="display: none">
   EY
