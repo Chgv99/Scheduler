@@ -15,21 +15,17 @@ module.exports = class HelpCommand extends BaseCommand {
         const helpEmbed = new Discord.MessageEmbed()
             .setColor('#0099ff')
             .setTitle('Scheduler Help')
+            .setDescription(':robot:  Scheduler is a tool that allows you to create reminders and alarms inside your Discord server.')
             .setURL('https://github.com/Chgv99/Scheduler/blob/main/README.md')
             .addFields(
-                { name: '\u200B', value: ':robot:  Scheduler is a tool that allows you to create reminders and alarms inside your Discord server.'},
                 { name: '\u200B', value: '\u200B'},
-                { name: 'Syntax', value: `\`\`\`${guildCommandPrefixes.get(message.guild.id)}reminder dd-mm-yyyy hh-mm "title" "description"\`\`\``},
+                { name: ':alarm_clock:  Set reminders', value: `\`\`\`${guildCommandPrefixes.get(message.guild.id)}reminder dd-mm-yyyy hh-mm "title" "description"\`\`\``},
                 { name: '\u200B', value: ':clock3:  Time must use ISO 8601 format (24h).'},
                 { name: '\u200B', value: ':newspaper:  The title and description of a reminder have to be enclosed in double quotes.'},
                 { name: '\u200B', value: ':mag:  Description is optional.'},
                 { name: '\u200B', value: '\u200B'},
-                //{ name: 'Prefix', value: ':pencil2: It is possible to change the default prefix of the commands by using *chprefix*. '},
-                //{ name: '\u200B', value: '\u200B'},
-                /*{ name: 'Date', value: 'dd-mm-yyyy', inline: true },
-                { name: 'Time', value: 'hh:mm', inline: true },
-                { name: 'Title', value: '"title"', inline: true },
-                { name: 'Description', value: '"description"', inline: true },*/
+                { name: ':calendar_spiral: List', value: `To see the list of created reminders use \`${guildCommandPrefixes.get(message.guild.id)}list\``},
+                { name: '\u200B', value: '\u200B'},
             )
             .setFooter('Click on \'Scheduler Help\' for more help.');
        /*console.log('[' + this.name + '] My creator is Christian G.!'+

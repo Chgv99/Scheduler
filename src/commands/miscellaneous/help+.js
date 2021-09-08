@@ -14,11 +14,19 @@ module.exports = class HelpPlusCommand extends BaseCommand {
     run (client, message, args) {
         const helpEmbed = new Discord.MessageEmbed()
             .setColor('#0099ff')
-            .setTitle('Scheduler Help (Administrator)')
+            .setTitle('Scheduler Help+')
             .setDescription(':robot:  Scheduler is a tool that allows you to create reminders and alarms inside your Discord server.')
             .setURL('https://github.com/Chgv99/Scheduler/blob/main/README.md')
             .addFields(
-                //{ name: '\u200B', value: },
+                { name: '\u200B', value: '\u200B'},
+                { name: ':alarm_clock:  Set reminders', value: `\`\`\`${guildCommandPrefixes.get(message.guild.id)}reminder dd-mm-yyyy hh-mm "title" "description"\`\`\``},
+                { name: '\u200B', value: ':clock3:  Time must use ISO 8601 format (24h).'},
+                { name: '\u200B', value: ':newspaper:  The title and description of a reminder have to be enclosed in double quotes.'},
+                { name: '\u200B', value: ':mag:  Description is optional.'},
+                { name: '\u200B', value: '\u200B'},
+                { name: ':calendar_spiral: List', value: `To see the list of created reminders use \`${guildCommandPrefixes.get(message.guild.id)}list\``},
+                { name: '\u200B', value: '\u200B'},
+                { name: ':grey_exclamation:  Change command prefix', value: `The default command prefix is \'>>\'. \`\`\`${guildCommandPrefixes.get(message.guild.id)}chprefix\`\`\``},
                 { name: '\u200B', value: '\u200B'},
                 { name: ':earth_africa:  Time Zone', value: '\nTo set up Scheduler, first you need to set a time zone for the server. It is set to UTC by default.' +
                                             `\`\`\`${guildCommandPrefixes.get(message.guild.id)}chtimezone YourTimeZone\`\`\`\n`+
@@ -26,13 +34,7 @@ module.exports = class HelpPlusCommand extends BaseCommand {
                                             `You can always see the current time of the server using \`${guildCommandPrefixes.get(message.guild.id)}time\`.\nBe careful, as having the expected time on your server does not mean that you got the correct time zone.`+
                                             `Not all time zones accomplish DST, so having an incorrect time zone might cause an unexpected time offset on spring and summer.`},
                 { name: '\u200B', value: '\u200B'},
-                { name: ':grey_exclamation:  Change command prefix', value: `The default command prefix is \'>>\'. \`\`\`${guildCommandPrefixes.get(message.guild.id)}chprefix\`\`\``},
-                { name: '\u200B', value: '\u200B'},
-                { name: ':alarm_clock:  Set reminders', value: `\`\`\`${guildCommandPrefixes.get(message.guild.id)}reminder dd-mm-yyyy hh-mm "title" "description"\`\`\``},
-                { name: '\u200B', value: ':clock3:  Time must use ISO 8601 format (24h).'},
-                { name: '\u200B', value: ':newspaper:  The title and description of a reminder have to be enclosed in double quotes.'},
-                { name: '\u200B', value: ':mag:  Description is optional.'},
-                { name: '\u200B', value: '\u200B'},
+                
                 //{ name: 'Prefix', value: ':pencil2: It is possible to change the default prefix of the commands by using *chprefix*. '},
                 //{ name: '\u200B', value: '\u200B'},
                 /*{ name: 'Date', value: 'dd-mm-yyyy', inline: true },
@@ -40,7 +42,7 @@ module.exports = class HelpPlusCommand extends BaseCommand {
                 { name: 'Title', value: '"title"', inline: true },
                 { name: 'Description', value: '"description"', inline: true },*/
             )
-            .setFooter('Click on \'Scheduler Help\' for more help.');
+            .setFooter('Click on \'Scheduler Help+\' for more help.');
        /*console.log('[' + this.name + '] My creator is Christian G.!'+
                     '\nhttps://github.com/Chgv99'+
                     '\nhttps://twitter.com/ChgvCode'); */
