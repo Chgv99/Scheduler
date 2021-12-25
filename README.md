@@ -47,7 +47,7 @@ You and your friends will be able to set useful reminders and alarms inside your
 3. More settings for reminders (e.g. to specify the amount of time left rather than the date and time, to allow more date formats like YYYY-MM-DD)
 4. Server configuration for server roles with permissions (now available for server creator only)
 5. Multiple broadcast channels
-6. Assign different time zones for the multiple broadcast channels (if you have a friend in a different time zone this will be very helpful :smile:)
+6. Command for setting own timezone (for users with a different timezone from the server)
 </details>
 
 # Help
