@@ -15,6 +15,7 @@ module.exports = class MessageEvent extends BaseEvent {
         if (message.author.bot) return;
         
         try{
+            console.log("et");
             const [cmd, args] = parseCommand(client, message);
             cmd.run(client, message, args);
         }catch (e) {

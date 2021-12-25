@@ -14,10 +14,10 @@ module.exports = class guildCreateEvent extends BaseEvent {
     async run (client, guild) {
         try {
             await this.connection.query(
-                `INSERT INTO Guilds VALUES('${guild.id}', '${guild.ownerID}')`
+                `INSERT INTO guilds VALUES('${guild.id}', '${guild.ownerID}')`
             );
             await this.connection.query(
-                `INSERT INTO GuildConfigurable VALUES ('${guild.id}', NULL, '>>', 'general', 'Etc/UTC')`
+                `INSERT INTO guildconfigurable VALUES ('${guild.id}', NULL, '>>', 'general', 'Etc/UTC')`
             );
             guildOutputChannels.set(guild.id, 'general');
             StateManager.emit('channelUpdated', guild.id, 'general');

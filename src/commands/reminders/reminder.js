@@ -103,7 +103,7 @@ module.exports = class ReminderCommand extends BaseCommand {
                 try {
                     await this.connection.query(
                         //`INSERT INTO Reminders VALUES('${message.guild.id}', '${message.channel.id}', \'${year}-${month}-${day} ${hours}:${minutes}\', '${argsQuot[0]}', '${argsQuot[1]}')`
-                        `INSERT INTO Reminders VALUES('${message.guild.id}', \'${mmnt.format("YYYY")}-${mmnt.format("MM")}-${mmnt.format("DD")} ${mmnt.format("HH")}:${mmnt.format("mm")}\', '${args[2]}', '${args[3]}', '${guildOutputChannels.get(message.guild.id)}')`
+                        `INSERT INTO reminders VALUES('${message.guild.id}', \'${mmnt.format("YYYY")}-${mmnt.format("MM")}-${mmnt.format("DD")} ${mmnt.format("HH")}:${mmnt.format("mm")}\', '${args[2]}', '${args[3]}', '${guildOutputChannels.get(message.guild.id)}')`
                         //`INSERT INTO Reminders VALUES('${message.guild.id}', \'${translatedMoment.getFullYear()}-${translatedMoment.getMonth()}-${translatedMoment.date()} ${translatedMoment.getHours()}:${translatedMoment.getMinutes()}:00\', '${args[2]}', '${args[3]}', '${guildOutputChannels.get(message.guild.id)}')`
                     );
                     console.log(`Reminder "${args[2]}" set successfully on ${day}-${month}-${year} at ${hours}:${minutes}.`); 
@@ -116,7 +116,7 @@ module.exports = class ReminderCommand extends BaseCommand {
                 try {
                     await this.connection.query(
                         //`INSERT INTO Reminders VALUES('${message.guild.id}', '${message.channel.id}', \'${year}-${month}-${day} ${hours}:${minutes}\', '${argsQuot[0]}', '${argsQuot[1]}')`
-                        `INSERT INTO Reminders VALUES('${message.guild.id}', \'${mmnt.format("YYYY")}-${mmnt.format("MM")}-${mmnt.format("DD")} ${mmnt.format("HH")}:${mmnt.format("mm")}\', '${args[2]}', '${args[3]}', '${args[4]}')`
+                        `INSERT INTO reminders VALUES('${message.guild.id}', \'${mmnt.format("YYYY")}-${mmnt.format("MM")}-${mmnt.format("DD")} ${mmnt.format("HH")}:${mmnt.format("mm")}\', '${args[2]}', '${args[3]}', '${args[4]}')`
                         //`INSERT INTO Reminders VALUES('${message.guild.id}', \'${translatedMoment.getFullYear()}-${translatedMoment.getMonth()}-${translatedMoment.date()} ${translatedMoment.getHours()}:${translatedMoment.getMinutes()}\', '${args[2]}', '${args[3]}', '${args[4]}')`
                     );
                     console.log(`Reminder "${args[2]}" set successfully on ${day}-${month}-${year} at ${hours}:${minutes} in ${args[4]}.`); 
@@ -129,7 +129,7 @@ module.exports = class ReminderCommand extends BaseCommand {
                 try {
                     await this.connection.query(
                         //`INSERT INTO Reminders VALUES('${message.guild.id}', '${message.channel.id}', \'${year}-${month}-${day} ${hours}:${minutes}\', '${argsQuot[0]}', '${argsQuot[1]}')`
-                        `INSERT INTO Reminders VALUES('${message.guild.id}', \'${mmnt.format("YYYY")}-${mmnt.format("MM")}-${mmnt.format("DD")} ${mmnt.format("HH")}:${mmnt.format("mm")}\', '${args[2]}', NULL, '${guildOutputChannels.get(message.guild.id)}')`
+                        `INSERT INTO reminders VALUES('${message.guild.id}', \'${mmnt.format("YYYY")}-${mmnt.format("MM")}-${mmnt.format("DD")} ${mmnt.format("HH")}:${mmnt.format("mm")}\', '${args[2]}', NULL, '${guildOutputChannels.get(message.guild.id)}')`
                     );
                     console.log(`Reminder "${args[2]}" set successfully on ${day}-${month}-${year} at ${hours}:${minutes}.`); 
                     message.channel.send(`Reminder "${args[2]}" set successfully on ${day}-${month}-${year} at ${hours}:${minutes}.`); 

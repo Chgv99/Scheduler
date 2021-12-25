@@ -21,7 +21,7 @@ module.exports = class ChangePrefixCommand extends BaseCommand {
                     
                     try {
                         await this.connection.query(
-                            `UPDATE GuildConfigurable SET cmdPrefix = '${newPrefix}' WHERE guildId = '${message.guild.id}'`
+                            `UPDATE guildconfigurable SET cmdPrefix = '${newPrefix}' WHERE guildId = '${message.guild.id}'`
                         );
                         guildCommandPrefixes.set(message.guild.id, newPrefix);
                         StateManager.emit('prefixUpdated', message.guild.id, newPrefix);

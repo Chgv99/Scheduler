@@ -17,7 +17,7 @@ module.exports = class ReadyEvent extends BaseEvent {
         console.log(client.user.tag + ' is online!');
         client.guilds.cache.forEach(guild => {
             this.connection.query(
-                `SELECT * FROM GuildConfigurable WHERE guildId = '${guild.id}'`
+                `SELECT * FROM guildconfigurable WHERE guildId = '${guild.id}'`
             ).then(result => {
                 //console.log(result);
                 const guildId = guild.id;

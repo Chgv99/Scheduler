@@ -25,7 +25,7 @@ module.exports = class ChangeTimeZoneCommand extends BaseCommand {
                     
                     try {
                         await this.connection.query(
-                            `UPDATE GuildConfigurable SET timeZone = '${newTimeZone}' WHERE guildId = '${message.guild.id}'`
+                            `UPDATE guildconfigurable SET timeZone = '${newTimeZone}' WHERE guildId = '${message.guild.id}'`
                         );
                         guildTimeZones.set(message.guild.id, newTimeZone);
                         StateManager.emit('timeZoneUpdated', message.guild.id, newTimeZone);

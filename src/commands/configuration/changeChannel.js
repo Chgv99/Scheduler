@@ -24,7 +24,7 @@ module.exports = class ChangeChannelCommand extends BaseCommand {
                     
                     try {
                         await this.connection.query(
-                            `UPDATE GuildConfigurable SET outputChannel = '${newChannel.name}' WHERE guildId = '${message.guild.id}'`
+                            `UPDATE guildconfigurable SET outputChannel = '${newChannel.name}' WHERE guildId = '${message.guild.id}'`
                         );
                         guildOutputChannels.set(message.guild.id, newChannel.name);
                         StateManager.emit('channelUpdated', message.guild.id, newChannel.name);

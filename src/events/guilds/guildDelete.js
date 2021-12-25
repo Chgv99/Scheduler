@@ -16,9 +16,9 @@ module.exports = class guildDeleteEvent extends BaseEvent {
             );
             console.log('Deleted guild from guilds.');
             await this.connection.query(
-                `DELETE FROM guildConfigurable  WHERE guildId = '${guild.id}'`
+                `DELETE FROM guildconfigurable  WHERE guildId = '${guild.id}'`
             );
-            console.log('Deleted guild from guildConfigurable.');
+            console.log('Deleted guild from guildconfigurable.');
             await this.connection.query(
                 `DELETE FROM reminders WHERE guildId = '${guild.id}'`
             );

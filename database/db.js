@@ -12,10 +12,10 @@ module.exports = pool.getConnection(function (e, conn) {
 }*/
 
 module.exports = mysql.createConnection({
-    //host: process.env.DB_HOST,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
     user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME
+    password: process.env.DB_PASS
     //queueLimit: 0,
     //connectionLimit: 0
 });//.then(() => console.log('Good')).catch(e => console.log(e));
