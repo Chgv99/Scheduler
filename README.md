@@ -96,3 +96,8 @@ If you want to send a reminder through a different channel from the default you 
 :warning: The title and description of a reminder have to be enclosed in double quotes.
 
 <!--## :alarm_clock:-->
+
+# Commands
+
+| Command | Parameters |
+| chprefix | newPrefix |
