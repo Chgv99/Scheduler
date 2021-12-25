@@ -104,9 +104,13 @@ Commands are used by typing the bot prefix (>> by default).
 - Parameters must be separated by a space. 
 - Parameters that need to be surrounded by double quotes are indicated in the table.
 - Parameters surrounded by square brackets are optional.
+- Commands with a :warning: sign will be changed in the near future.
 
 | Command | Parameters |
 | ------- | ---------- |
-| chchannel | newBroadcastChannel |
-| chprefix | newPrefix |
-| chtimezone | "timeZone" |
+| chchannel:warning:  | newBroadcastChannel |
+| chprefix:warning: | newPrefix |
+| chtimezone:warning: | "timeZone" |
+| reminder:warning: | date time "title" ["description"] |
+| time | |
+| timeZone:warning: | |
