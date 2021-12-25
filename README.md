@@ -5,10 +5,9 @@
 <h1 align="center">
  <!--Scheduler-->
   <img width="30%" src="img/banner.png">
+  <br>
+  Scheduler
 </h1>
-<!--<h1 style="display: none">
-  EY
-</h1>-->
 <p align="center">
  <b>A Discord bot that allows you to create reminders and alarms inside your own server.</b>
 </p>
