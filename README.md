@@ -99,6 +99,14 @@ If you want to send a reminder through a different channel from the default you 
 
 # Commands
 
+Commands are used by typing the bot prefix (>> by default). 
+
+- Parameters must be separated by a space. 
+- Parameters that need to be surrounded by double quotes are indicated in the table.
+- Parameters surrounded by square brackets are optional.
+
 | Command | Parameters |
 | ------- | ---------- |
+| chchannel | newBroadcastChannel |
 | chprefix | newPrefix |
+| chtimezone | "timeZone" |
