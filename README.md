@@ -60,7 +60,7 @@ For the moment, you only can set a time zone by using its full name (e.g. Atlant
 Check out [this list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) of time zones if you don\'t know yours. You can always see the current time zone of the server using `>>timezone` and the time using `>>time`.
 
 :warning: Be careful, as having the expected time on your server does not mean that you got the correct time zone.
-Not all time zones accomplish [DST](https://en.wikipedia.org/wiki/Daylight_saving_time), so having an incorrect time zone might cause an unexpected time offset on spring and summer.
+Not all time zones accomplish [DST](https://en.wikipedia.org/wiki/Daylight_saving_time), so having an incorrect time zone might cause an unexpected time offset on winter and summer.
 
 ## ❕ **Command prefix**
 
