@@ -71,7 +71,7 @@ You can change it by using
 
 ## :loudspeaker: Broadcast channel
 
-Every time a reminder is sent, it'll be throught the *broadcast* channel. By default, the *broadcast* channel will be set to 'general'. This can be modified using
+Every time a reminder is sent, it'll be through the *broadcast* channel. By default, the *broadcast* channel is set to 'general'. This can be modified using
 
 `>>chchannel newchannel`
 
